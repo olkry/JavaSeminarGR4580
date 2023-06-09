@@ -12,7 +12,9 @@ public class App {
         // task3();
         // task3Else(); // Код не работает при последовательностях val! Пример с данным
         // массивом.
-        task4();
+        // task4();
+        // task5();
+        // task8();
 
     }
 
@@ -159,6 +161,62 @@ public class App {
         }
         return res;
 
+    }
+
+    public static void task5() {
+        // Задание №5 (доп)
+        // Во фразе "Welcome to the Java course" переставить слова
+        // в обратном порядке.
+
+        String soursLine = "Welcome to the Java course";
+        String[] splitLine = soursLine.split(" ");
+        String outLine = "";
+        for (int i = splitLine.length - 1; i >= 0; i--) {
+            outLine = outLine + splitLine[i] + " ";
+        }
+        System.out.println(soursLine);
+        System.out.println(outLine);
+
+    }
+
+    public static void task8() {
+        // Задание №8 (доп)
+        // Задан массив, например, nums = [1,7,3,6,5,6].
+        // Написать программу, которая найдет индекс i для этого массива
+        // такой, что сумма элементов с индексами < i равна сумме
+        // элементов с индексами > i.
+
+        int[] nums = { 1, 7, 3, 6, 5, 6 };
+        System.out.println(midleIndex(nums));
+    }
+
+    private static int loweSum(int[] arr, int index) {
+        int sum = 0;
+        for (int i = 0; i < index; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    private static int higeSum(int[] arr, int index) {
+        int sum = 0;
+        for (int i = arr.length - 1; i > index; i--) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    private static int midleIndex(int[] num) {
+        int index = 1;
+        while (loweSum(num, index) < higeSum(num, index)) {
+            index++;
+        }
+        if (loweSum(num, index) == higeSum(num, index)) {
+            return index;
+        } 
+        else {
+            return -1;
+        }
     }
 
 }
