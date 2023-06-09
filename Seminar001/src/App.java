@@ -14,6 +14,7 @@ public class App {
         // массивом.
         // task4();
         // task5();
+        // task6();
         // task8();
 
     }
@@ -177,6 +178,20 @@ public class App {
         System.out.println(soursLine);
         System.out.println(outLine);
 
+    }
+
+    public static void task006Sem() {
+        // Задание №6 (доп)
+        // Реализовать функцию возведения числа а в степень b. a, b из Z.
+        // Сводя количество выполняемых действий к минимуму.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+        scanner.close();
+        System.out.println(Math.pow(num1, num2));
     }
 
     public static void task8() {
