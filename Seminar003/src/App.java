@@ -17,19 +17,19 @@ public class App {
         Task004.biblioList();
 
         // // Для дз 2
-        // Random rnd = new Random();
-        // List<Integer> iList = new ArrayList<>();
-        // for (int i = 0; i < 100; i++) {
-        //     iList.add(rnd.nextInt(1000));
-        // }
-        // List<Integer> delList = new ArrayList<>();
-        // for (Integer num : iList) {
-        //     if (num%2==0) {
-        //         delList.add(num);
-        //     }
-        // }
-        // iList.removeAll(delList);
-        // System.out.println(iList);
+        Random rnd = new Random();
+        List<Integer> iList = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            iList.add(rnd.nextInt(1000));
+        }
+        List<Integer> delList = new ArrayList<>();
+        for (Integer num : iList) {
+            if (num%2==0) {
+                delList.add(num);
+            }
+        }
+        iList.removeAll(delList);
+        System.out.println(iList);
 
         // // Для дз 3
         // Random rnd = new Random();
