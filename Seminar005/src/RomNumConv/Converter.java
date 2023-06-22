@@ -26,11 +26,11 @@ public class Converter {
             List<RomanNum> romNum = RomanNum.getRevSortValue();
             int i = 0;
             StringBuilder sb = new StringBuilder();
-            while (num>0&&romNum.size()> i) {
+            while (num > 0 && romNum.size() > i) {
                   RomanNum symbol = romNum.get(i);
-                  if (symbol.getValue()<=num) {
+                  if (symbol.getValue() <= num) {
                         sb.append(symbol.name());
-                        num-=symbol.getValue();
+                        num -= symbol.getValue();
                   } else {
 
                         i++;
