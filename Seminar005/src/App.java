@@ -4,8 +4,8 @@ import java.util.TreeMap;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        // HashMap<Integer,String> map = HashMapTest.Test.fill();
-        // HashMapTest.Test.printHashMap(map, "Иванов");
+        HashMap<Integer,String> map = HashMapTest.Test.fill();
+        HashMapTest.Test.printHashMap(map, "Иванов");
 
         // HashMap<String, Integer> open = new HashMap<>();
         // open.put("(", 0);
@@ -37,8 +37,8 @@ public class App {
         // TreeMap sortMap = TreeMapTest.Test.sortHashMap(map);
         // sortMap.entrySet().forEach(System.out::println);
 
-        System.out.println(RomNumConv.Converter.romanToArab("MMXXIII"));
-        System.out.println(RomNumConv.Converter.arabicToRoman(2023));
+        // System.out.println(RomNumConv.Converter.romanToArab("MMXXIII"));
+        // System.out.println(RomNumConv.Converter.arabicToRoman(2023));
 
     }
 }
